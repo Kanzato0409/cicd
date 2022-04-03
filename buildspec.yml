@@ -16,7 +16,8 @@ phases:
 artifacts:
   files:
     - appspec.yml
-    - index.html
+    - simple-pod.yaml
+    - scripts/kube-apply
   base-directory: $CODEBUILD_SRC_DIR
   name: eks-apply-artifacts
   descard-paths: no
