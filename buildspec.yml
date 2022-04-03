@@ -13,3 +13,9 @@ phases:
   post_build:
     commands:
       - echo 'Hello World (POST_BUILD phase)'
+artifacts:
+  files:
+    - index.html
+  base-directory: $CODEBUILD_SRC_DIR
+  name: eks-apply-artifacts
+  descard-paths: no
