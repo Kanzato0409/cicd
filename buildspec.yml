@@ -15,6 +15,7 @@ phases:
       - echo 'Hello World (POST_BUILD phase)'
 artifacts:
   files:
+    - appspec.yml
     - index.html
   base-directory: $CODEBUILD_SRC_DIR
   name: eks-apply-artifacts
