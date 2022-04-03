@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+
+  pre_build:
+     commands:
+      - docker-compose up -d
+
+  build:
+    commands:
+      - python -B -m unittest discover
